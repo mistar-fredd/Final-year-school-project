@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneaker Logos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<STYle>
+    /* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Responsive grid layout */
+@media (min-width: 600px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+</STYle>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="sneakers/Nike-Logo.png" alt="Sneaker 1">
+        </div>
+        <div class="card">
+            <img src="sneakers/adidas-logo.png"Sneaker 2">
+        </div>
+        <div class="card">
+            <img src="sneakers/puma-logo.jpg" alt="Sneaker 3">
+        </div>
+        <div class="card">
+            <img src="sneakers/new-balance-logo.jpg" alt="Sneaker 4">
+        </div>
+        <div class="card">
+            <img src="sneakers/on-logo.png" alt="Sneaker 5">
+        </div>
+        <div class="card">
+            <img src="sneakers/under-amour-logo.png" alt="Sneaker 6">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
